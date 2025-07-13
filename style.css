@@ -1,0 +1,109 @@
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  direction: rtl;
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.chat-container {
+  display: flex;
+  width: 90%;
+  height: 90vh;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.users-list {
+  width: 25%;
+  background: #343a40;
+  color: white;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.users-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.users-list li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.chat-box {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.chat-header {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #ccc;
+}
+
+.chat-input button {
+  border-radius: 0 10px 10px 0;
+}

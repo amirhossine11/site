@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>چت</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <aside class="users-list">
+      <h3>کاربران</h3>
+      <ul id="users">
+        <li onclick="startChat('09121234567')">محمد</li>
+        <li onclick="startChat('09351112233')">علی</li>
+      </ul>
+    </aside>
+    
+    <main class="chat-box">
+      <div class="chat-header">
+        <span id="chat-with">چت با: </span>
+      </div>
+      <div class="messages" id="messages"></div>
+      <div class="chat-input">
+        <input type="text" id="message-input" placeholder="پیام بنویس..." />
+        <button onclick="sendMessage()">ارسال</button>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
